@@ -1,5 +1,12 @@
 #! /bin/bash
 
+if [[ -d "/home/$(whoami)/intel_venv/bin" ]];
+    source /home/$(whoami)/intel_venv/bin/activate
+else
+    python3 -m venv /home/$(whoami)/intel_venv
+    source /home/$(whoami)/intel_venv/bin/activate
+fi
+
 # download the file
 cp ncsdk.conf /tmp
 
