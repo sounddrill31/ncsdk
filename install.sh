@@ -51,6 +51,7 @@ sudo cp ${DIR}/api/include/mvnc.h .
 sudo cp ${DIR}/api/include/mvnc_deprecated.h .
 sudo cp ${DIR}/api/python/mvnc/mvncapi.py .
 sudo cp ${DIR}/api/python/mvnc/__init__.py .
+sed -i '55s/exit 1//g' ./install-ncsdk.sh # Do not exit after "Your current combination of linux distribution and distribution version is not officially supported!"
 ./install-ncsdk.sh
 
 # leave the uninstall script on the target
