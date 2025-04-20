@@ -16,8 +16,8 @@ then
 		echo "OpenCV already setup for python";
 		echo "";
 		echo "Uninstalling opencv pip installation";
-		sudo pip3 uninstall opencv-contrib-python
-		sudo pip3 uninstall opencv-python
+		pip3 uninstall opencv-contrib-python
+		pip3 uninstall opencv-python
 
 		echo "Looking for opencv source installation";
 		if [ -d "$HOME/opencv-3.3.0" ]; then

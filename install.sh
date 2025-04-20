@@ -1,6 +1,6 @@
 #! /bin/bash
 
-if [[ -d "/home/$(whoami)/intel_venv/bin" ]];
+if [[ -d "/home/$(whoami)/intel_venv/bin" ]];thenthen
     source /home/$(whoami)/intel_venv/bin/activate
 else
     python3 -m venv /home/$(whoami)/intel_venv
